@@ -20,6 +20,10 @@ p {
 	font-size: 17px;
 }
 
+hr {
+	border-color: #1a1a1a;
+}
+
 .navbar {
 	margin-bottom: 0px;
 }
@@ -29,24 +33,25 @@ p {
 }
 
 .jumbotron {
-	background-image: url("../img/1000f.png");
-	background-position: center center;
+	background: url(../img/1000f.png) no-repeat center center fixed;
+	/*background-image: url("../img/1000f.png");
+	background-position: center center;*/
 	background-size: cover;
 	text-align: center;
-	padding-top: 68px;
-	padding-bottom: 108px;
+	padding-top: 70px;
+	padding-bottom: 150px;
 	border-bottom: 1px solid #101010;
 }
 
 .jumbotron .container {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
 	text-shadow: 0 0 1px rgba(0,0,0,.05),0 1px 2px rgba(0,0,0,.3);
 	color: rgba(255,255,255,0.9);
 }
 
 .jumbotron p {
 	font-size: 21px;
+	font-weight: 400;
 }
 
 .jumbotron h1 {
@@ -80,17 +85,19 @@ p {
 .achievement {
 	background-color: #f1f1f1;
 	color: #222;
-	border-radius: 3px;
 	padding: 3px;
 	margin: 10px 0 10px 0;
+	border-radius: 3px;
 }
 .media-heading {
 	margin: 5px 0px;
 }
-
+.media-object {
+	border-radius: 50%;
+}
 #footer {
-	margin-top: 20px;
-	padding-top: 20px;
+	margin-top: 100px;
+	padding-top: 60px;
 	background-color: #1a1a1a;
 	border-top: 1px solid #101010;
 }
