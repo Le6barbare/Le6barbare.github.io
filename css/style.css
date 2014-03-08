@@ -65,41 +65,103 @@ hr {
 	margin-right: 0.9em;
 }
 
-.social ul {
-	margin: 0 auto;
-	max-width: 800px;
-}
-.social ul li {
-	display: inline-block;
-	padding-left: 24px;
+@media (max-width: 991px) {
+	#projets img {
+		height: 300px;
+		width: 300px;
+	}
+	#achievements .col-md-4 {
+		padding-bottom: 15px;
+	}
+	#achievements .col-md-12 .row {
+		padding-bottom: 0px;
+	}
 }
 
-.projet-img-left {
-	margin-right: 10px;
+@media (max-width: 768px) {
+	#projets img {
+		height: 200px;
+		width: 200px;
+	}
 }
 
-.projet-img-right {
-	margin-left: 10px;
+@media (max-width: 479px) {
+	#projets img {
+		display: none !important;
+	}
+	.text-right {
+		text-align: left;
+	}
+}
+
+.pull-left {
+	margin-right: 25px;
+}
+
+.pull-right {
+	margin-left: 25px;
+}
+
+
+@media (min-width: 992px) {
+	#achievements .col-md-12 .row {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }
 
 .achievement {
 	background-color: #f1f1f1;
 	color: #222;
-	padding: 3px;
-	margin: 10px 0 10px 0;
+	padding: 5px;
+	/*margin: 5px 0 5px 0;*/
 	border-radius: 3px;
+	min-height: 97px;
+}
+
+.achievement p {
+	margin: 0px;
 }
 .media-heading {
-	margin: 5px 0px;
+	margin-top: 3px;
 }
 .media-object {
+	height: 64px;
+	width: 64px;
 	border-radius: 50%;
+	background: url(../img/dirt.png) no-repeat center center;
+	margin: 5px;
+	padding: 8px;
 }
+
+
+
 #footer {
 	margin-top: 100px;
 	padding-top: 60px;
 	background-color: #1a1a1a;
 	border-top: 1px solid #101010;
+}
+
+.social ul {
+	margin: 0 auto;
+	max-width: 728px;
+	padding: 0px;
+}
+.social ul li {
+	display: inline-block;
+	padding-left: 24px;
+}
+.social ul li:first-child {
+	padding-left: 0px;
+}
+@media (max-width: 768px) {
+	.social ul {
+		padding-left: 35px;
+	}
+	.social ul li:first-child {
+		padding-left: 24px;
+	}
 }
 
 footer {
