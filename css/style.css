@@ -24,6 +24,17 @@ hr {
 	border-color: #1a1a1a;
 }
 
+p a {
+	color: #f1f1f1;
+	border-bottom: 1px solid #2a6496;
+}
+
+p a:hover, p a:focus {
+	color: #f1f1f1;
+	border-bottom: 1px solid #428bca;
+	text-decoration: none;
+}
+
 .navbar {
 	margin-bottom: 0px;
 }
@@ -171,3 +182,5 @@ footer {
 	padding-bottom: 25px;
 	margin-top: 26px;
 }
+
+/* Mettre un decoration: none sur les lien hover des hexagon (pour IE)*/
