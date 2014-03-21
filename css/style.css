@@ -43,6 +43,11 @@ p a:hover, p a:focus {
 	background-color: #1a1a1a;
 }
 
+.navbar-text {
+	margin-top: 19px;
+	margin-bottom: 14px;
+}
+
 .jumbotron {
 	background: url(../img/1000f.png) no-repeat center center fixed;
 	/*background-image: url("../img/1000f.png");
@@ -62,6 +67,11 @@ p a:hover, p a:focus {
 
 .jumbotron p {
 	font-size: 21px;
+	font-weight: 400;
+}
+
+.jumbotron .small {
+	font-size: 19px;
 	font-weight: 400;
 }
 
