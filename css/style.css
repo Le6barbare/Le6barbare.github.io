@@ -10,8 +10,8 @@
 }
 
 body {
-	background-color: #222;
-	color: #f1f1f1;
+	background-color: #EAEAEA;
+	color: #222;
 	padding-top: 50px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -25,12 +25,12 @@ hr {
 }
 
 p a {
-	color: #f1f1f1;
-	border-bottom: 1px solid #2a6496;
+	color: #333;
+	border-bottom: 1px solid #428BCA;
 }
 
 p a:hover, p a:focus {
-	color: #f1f1f1;
+	/*color: #f1f1f1;*/
 	border-bottom: 1px solid #428bca;
 	text-decoration: none;
 }
@@ -56,6 +56,7 @@ p a:hover, p a:focus {
 	text-align: center;
 	padding-top: 70px;
 	padding-bottom: 150px;
+	margin-bottom: 0px;
 	border-bottom: 1px solid #101010;
 }
 
@@ -68,6 +69,12 @@ p a:hover, p a:focus {
 .jumbotron p {
 	font-size: 21px;
 	font-weight: 400;
+}
+
+.jumbotron p a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .jumbotron .small {
@@ -86,9 +93,19 @@ p a:hover, p a:focus {
 	margin-right: 0.9em;
 }
 
+@media (max-width: 1024px) {
+	.jumbotron {
+		padding-bottom: 90px;
+	}
+}
+
 @media (max-width: 991px) {
 	#projets img {
 		height: 300px;
+		width: 300px;
+	}
+	.youtube {
+		height: 169px;
 		width: 300px;
 	}
 	#achievements .col-md-4 {
@@ -97,6 +114,9 @@ p a:hover, p a:focus {
 	#achievements .col-md-12 .row {
 		padding-bottom: 0px;
 	}
+	#footer {
+		margin-top: 10px !important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -104,10 +124,17 @@ p a:hover, p a:focus {
 		height: 200px;
 		width: 200px;
 	}
+	.youtube {
+		height: 113px;
+		width: 200px;
+	}
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
 	#projets img {
+		display: none !important;
+	}
+	.youtube {
 		display: none !important;
 	}
 	.text-right {
@@ -147,42 +174,21 @@ p a:hover, p a:focus {
 	margin-top: 3px;
 }
 .media-object {
-	height: 64px;
-	width: 64px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
-	background: url(../img/dirt.png) no-repeat center center;
+	/*background: url(../img/dirt.png) no-repeat center center;*/
+	background-color: #548DAD;
 	margin: 5px;
-	padding: 8px;
+	padding: 8px 0px 0px 1px;
+	color: #fff;
 }
-
-
 
 #footer {
 	margin-top: 100px;
-	padding-top: 60px;
+	padding-top: 10px;
 	background-color: #1a1a1a;
 	border-top: 1px solid #101010;
-}
-
-.social ul {
-	margin: 0 auto;
-	max-width: 728px;
-	padding: 0px;
-}
-.social ul li {
-	display: inline-block;
-	padding-left: 24px;
-}
-.social ul li:first-child {
-	padding-left: 0px;
-}
-@media (max-width: 768px) {
-	.social ul {
-		padding-left: 35px;
-	}
-	.social ul li:first-child {
-		padding-left: 24px;
-	}
 }
 
 footer {

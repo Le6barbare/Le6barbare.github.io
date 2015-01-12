@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'icon';
+  src: url('../font/icon/icon.eot?61711633');
+  src: url('../font/icon/icon.eot?61711633#iefix') format('embedded-opentype'),
+       url('../font/icon/icon.woff?61711633') format('woff'),
+       url('../font/icon/icon.ttf?61711633') format('truetype'),
+       url('../font/icon/icon.svg?61711633#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icon';
+    src: url('../font/icon.svg?61711633#icon') format('svg');
+  }
+}
+*/
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  font-size: 240%;
+ 
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+ 
+.icon-youtube:before { content: '\e800'; } /* '' */
+.icon-lastfm:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-gplus:before { content: '\e803'; font-size: 200%; vertical-align: 3px; margin-right: 10px; } /* '' */
+.icon-reddit:before { content: '\e804'; } /* '' */
+.icon-flickr:before { content: '\e806'; } /* '' */
+.icon-github:before { content: '\e807'; font-size: 200%; vertical-align: 3px; } /* '' */
+.icon-tumblr:before { content: '\e808'; font-size: 200%; vertical-align: 3px; } /* '' */
+.icon-deviantart:before { content: '\e809'; } /* '' */
+.icon-twitch:before { content: '\e80a'; } /* '' */
+
+.icon-keyboard:before { content: '\e805'; } /* '' */
+.icon-gamepad:before { content: '\e80b'; } /* '' */
+.icon-pencil:before { content: '\e80c'; } /* '' */
+.icon-award:before { content: '\e80d'; } /* '' */
+.icon-brush:before { content: '\e80e'; } /* '' */
+.icon-video:before { content: '\e80f'; } /* '' */
+.icon-terminal:before { content: '\e810'; } /* '' */
+.icon-ok:before { content: '\e811'; font-size: 120%; } /* '' */
+.icon-cubes:before { content: '\e812'; } /* '' */
+.icon-cancel:before { content: '\e813'; } /* '' */
+.icon-cube:before { content: '\e814'; } /* '' */
+
+
+#liens {
+  background-color: #222;
+  padding: 15px 0;
+}
+
+.social span {
+  color: #ffffff;
+  vertical-align: 7px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.social ul {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.social ul a li:first-child {
+  padding-left: 0px;
+}
+
+.social ul a li {
+  display: inline-block;
+  padding-left: 24px;
+}
+
+.social [class^="icon-"] {
+  color: #999;
+  transition: color 500ms ease;
+  -webkit-transition: color 500ms ease;
+}
+
+.social a:hover>li>.icon-youtube {
+  color: rgb(212, 56, 56);
+}
+
+.social a:hover>li>.icon-github {
+  color: #4183c4;
+}
+
+.social a:hover>li>.icon-deviantart {
+  color: rgb(181, 198, 68);
+}
+
+.social a:hover>li>.icon-flickr {
+  color: rgb(189, 65, 129);
+}
+
+.social a:hover>li>.icon-twitter {
+  color: rgb(76, 157, 188);
+}
+
+.social a:hover>li>.icon-lastfm {
+  color: rgb(209, 60, 84);
+}
+
+.social a:hover>li>.icon-tumblr {
+  color: rgb(65, 98, 129);
+}
+
+.social a:hover>li>.icon-twitch {
+  color: #7F4ED8;
+}
+
+.social a:hover>li>.icon-gplus {
+  color: #D03A3A;
+}
+
+.pmc-icon {
+  height: 30px;
+  width: 30px;
+  background: url(../img/pmc.png) no-repeat center center;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: -3px;
+  transition: background 500ms ease;
+  -webkit-transition: background 500ms ease;
+}
+
+.social a:hover>li>.pmc-icon {
+  background: url(../img/pmc-hover.png) no-repeat center center;
+  display: inline-block;
+}
+
+ul a:hover, ul a:focus {
+  text-decoration: none;
+}
+
+.social a:hover>li>span {
+  border-bottom: 1px solid #428BCA;
+}
+
+.breakout, .topbreakout {
+  display: inline-block;
+}
+
+@media (max-width: 1130px) {
+  .breakout, .topbreakout {
+    display: block;
+  }
+  .topbreakout{
+    padding-bottom: 15px;
+  }
+  .social ul a {
+    padding-left: 30px;
+  }
+  .social ul a:first-child {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .social ul a {
+    display: block;
+    /*font-size: 21px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .topbreakout a:nth-child(odd) {
+    background-color: #333;
+  }
+  .breakout a:nth-child(even) {
+    background-color: #333;
+  }
+  .social span{
+    font-size: 21px;
+  }
+  .topbreakout{
+    padding-bottom: 0px;
+  }
+}
