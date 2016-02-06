@@ -69,8 +69,8 @@
 .icon-video:before { content: '\e80f'; } /* '' */
 .icon-terminal:before { content: '\e810'; } /* '' */
 .icon-ok:before { content: '\e811'; font-size: 120%; } /* '' */
+.icon-cancel:before { content: '\e813'; font-size: 120%;  } /* '' */
 .icon-cubes:before { content: '\e812'; } /* '' */
-.icon-cancel:before { content: '\e813'; } /* '' */
 .icon-cube:before { content: '\e814'; } /* '' */
 
 
@@ -171,12 +171,21 @@ ul a:hover, ul a:focus {
   display: inline-block;
 }
 
-@media (max-width: 1130px) {
+@media (min-width: 1200px) {
+    .social a {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 1199px) {
   .breakout, .topbreakout {
     display: block;
   }
-  .topbreakout{
+  .topbreakout {
     padding-bottom: 15px;
+  }
+  .social {
+        padding-left: 0px;
+        padding-right: 0px;
   }
   .social ul a {
     padding-left: 30px;

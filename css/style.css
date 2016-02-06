@@ -170,18 +170,57 @@ p a:hover, p a:focus {
 .achievement p {
 	margin: 0px;
 }
+
+.achievement .status {
+    margin: 5px 0px;
+    padding-top: 1px;
+}
+
+.success {
+    border-top: 1px solid #459645;
+}
+
+.fail {
+    border-top: 1px solid #d9534f;
+}
+
+.status .icon-ok {
+    color: #459645;
+}
+
+.status .icon-cancel {
+    color: #d9534f;
+}
+
 .media-heading {
 	margin-top: 3px;
 }
 .media-object {
 	height: 50px;
 	width: 50px;
-	border-radius: 50%;
-	/*background: url(../img/dirt.png) no-repeat center center;*/
+	border-radius: 25%;
 	background-color: #548DAD;
 	margin: 5px;
 	padding: 8px 0px 0px 1px;
 	color: #fff;
+}
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    /*padding-top: 30px;*/
+    height: 0;
+    overflow: hidden;
+}
+ 
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #footer {
@@ -198,5 +237,3 @@ footer {
 	padding-bottom: 25px;
 	margin-top: 26px;
 }
-
-/* Mettre un decoration: none sur les lien hover des hexagon (pour IE)*/
