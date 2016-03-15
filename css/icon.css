@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'icon';
-  src: url('../font/icon/icon.eot?61711633');
-  src: url('../font/icon/icon.eot?61711633#iefix') format('embedded-opentype'),
-       url('../font/icon/icon.woff?61711633') format('woff'),
-       url('../font/icon/icon.ttf?61711633') format('truetype'),
-       url('../font/icon/icon.svg?61711633#icon') format('svg');
+  src: url('../font/icon.eot?32850108');
+  src: url('../font/icon.eot?32850108#iefix') format('embedded-opentype'),
+       url('../font/icon.woff2?32850108') format('woff2'),
+       url('../font/icon.woff?32850108') format('woff'),
+       url('../font/icon.ttf?32850108') format('truetype'),
+       url('../font/icon.svg?32850108#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icon';
-    src: url('../font/icon.svg?61711633#icon') format('svg');
+    src: url('../font/icon.svg?32850108#icon') format('svg');
   }
 }
 */
@@ -45,33 +46,41 @@
  
   /* you can be more comfortable with increased icons size */
   font-size: 240%;
- 
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   /* Uncomment for 3D effect */
   text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
 }
  
 .icon-youtube:before { content: '\e800'; } /* '' */
 .icon-lastfm:before { content: '\e801'; } /* '' */
-.icon-twitter:before { content: '\e802'; } /* '' */
-.icon-gplus:before { content: '\e803'; font-size: 200%; vertical-align: 3px; margin-right: 10px; } /* '' */
+.icon-gplus:before { content: '\e802'; font-size: 200%; vertical-align: 3px; margin-right: 10px; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
 .icon-reddit:before { content: '\e804'; } /* '' */
 .icon-flickr:before { content: '\e806'; } /* '' */
 .icon-github:before { content: '\e807'; font-size: 200%; vertical-align: 3px; } /* '' */
 .icon-tumblr:before { content: '\e808'; font-size: 200%; vertical-align: 3px; } /* '' */
 .icon-deviantart:before { content: '\e809'; } /* '' */
 .icon-twitch:before { content: '\e80a'; } /* '' */
+.icon-facebook:before { content: '\e815'; } /* '' */
 
 .icon-keyboard:before { content: '\e805'; } /* '' */
-.icon-gamepad:before { content: '\e80b'; } /* '' */
-.icon-pencil:before { content: '\e80c'; } /* '' */
+.icon-pencil:before { content: '\e80b'; } /* '' */
+.icon-gamepad:before { content: '\e80c'; } /* '' */
 .icon-award:before { content: '\e80d'; } /* '' */
-.icon-brush:before { content: '\e80e'; } /* '' */
-.icon-video:before { content: '\e80f'; } /* '' */
+.icon-video:before { content: '\e80e'; } /* '' */
+.icon-brush:before { content: '\e80f'; } /* '' */
 .icon-terminal:before { content: '\e810'; } /* '' */
 .icon-ok:before { content: '\e811'; font-size: 120%; } /* '' */
-.icon-cancel:before { content: '\e813'; font-size: 120%;  } /* '' */
-.icon-cubes:before { content: '\e812'; } /* '' */
+.icon-cancel:before { content: '\e813'; font-size: 120%; } /* '' */
 .icon-cube:before { content: '\e814'; } /* '' */
+.icon-cubes:before { content: '\e812'; } /* '' */
+.icon-lab:before { content: '\e816'; } /* '' */
+.icon-book:before { content: '\e817'; } /* '' */
+.icon-magic:before { content: '\e818'; } /* '' */
 
 
 #liens {
