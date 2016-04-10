@@ -139,6 +139,10 @@
   color: rgb(76, 157, 188);
 }
 
+.social a:hover>li>.icon-facebook {
+  color: rgb(59, 89, 152);
+}
+
 .social a:hover>li>.icon-lastfm {
   color: rgb(209, 60, 84);
 }
