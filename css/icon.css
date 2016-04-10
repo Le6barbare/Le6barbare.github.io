@@ -82,6 +82,9 @@
 .icon-book:before { content: '\e817'; } /* '' */
 .icon-magic:before { content: '\e818'; } /* '' */
 
+[class^="icon-"].small {
+    font-size: 60%;
+}
 
 #liens {
   background-color: #222;
