@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icon';
-  src: url('../font/icon/icon.eot?32850108');
-  src: url('../font/icon/icon.eot?32850108#iefix') format('embedded-opentype'),
-       url('../font/icon/icon.woff2?32850108') format('woff2'),
-       url('../font/icon/icon.woff?32850108') format('woff'),
-       url('../font/icon/icon.ttf?32850108') format('truetype'),
-       url('../font/icon/icon.svg?32850108#icon') format('svg');
+  src: url('../fonts/icon/icon.eot?32850108');
+  src: url('../fonts/icon/icon.eot?32850108#iefix') format('embedded-opentype'),
+       url('../fonts/icon/icon.woff2?32850108') format('woff2'),
+       url('../fonts/icon/icon.woff?32850108') format('woff'),
+       url('../fonts/icon/icon.ttf?32850108') format('truetype'),
+       url('../fonts/icon/icon.svg?32850108#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -86,11 +86,6 @@
     font-size: 60%;
 }
 
-#liens {
-  background-color: #222;
-  padding: 15px 0;
-}
-
 .social span {
   color: #ffffff;
   vertical-align: 7px;
@@ -114,63 +109,69 @@
 }
 
 .social [class^="icon-"] {
-  color: #999;
+  color: #fff;
   transition: color 500ms ease;
   -webkit-transition: color 500ms ease;
 }
 
-.social a:hover>li>.icon-youtube {
+.social li:hover>a>.icon-youtube {
   color: rgb(212, 56, 56);
 }
 
-.social a:hover>li>.icon-github {
+.social li:hover>a>.icon-github {
   color: #4183c4;
 }
 
-.social a:hover>li>.icon-deviantart {
+.social li:hover>a>.icon-deviantart {
   color: rgb(181, 198, 68);
 }
 
-.social a:hover>li>.icon-flickr {
+.social li:hover>a>.icon-flickr {
   color: rgb(189, 65, 129);
 }
 
-.social a:hover>li>.icon-twitter {
+.social li:hover>a>.icon-twitter {
   color: rgb(76, 157, 188);
 }
 
-.social a:hover>li>.icon-facebook {
+.social li:hover>a>.icon-facebook {
   color: rgb(59, 89, 152);
 }
 
-.social a:hover>li>.icon-lastfm {
+.social li:hover>a>.icon-lastfm {
   color: rgb(209, 60, 84);
 }
 
-.social a:hover>li>.icon-tumblr {
+.social li:hover>a>.icon-tumblr {
   color: rgb(65, 98, 129);
 }
 
-.social a:hover>li>.icon-twitch {
+.social li:hover>a>.icon-twitch {
   color: #7F4ED8;
 }
 
-.social a:hover>li>.icon-gplus {
+.social li:hover>a>.icon-gplus {
   color: #D03A3A;
 }
+
+.social li:hover>a>.icon-gamepad {
+  color: #FA5C5C;
+}
+
 
 .pmc-icon {
   height: 30px;
   width: 30px;
   background: url(../img/pmc.png) no-repeat center center;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: .4em;
+  margin-left: .4em;
   vertical-align: -3px;
   transition: background 500ms ease;
   -webkit-transition: background 500ms ease;
 }
 
-.social a:hover>li>.pmc-icon {
+.social li:hover>a>.pmc-icon {
   background: url(../img/pmc-hover.png) no-repeat center center;
   display: inline-block;
 }
@@ -179,7 +180,7 @@ ul a:hover, ul a:focus {
   text-decoration: none;
 }
 
-.social a:hover>li>span {
+.social li:hover>a>span {
   border-bottom: 1px solid #428BCA;
 }
 

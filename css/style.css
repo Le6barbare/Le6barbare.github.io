@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'amaranth';
-	src: url('../font/amaranth/amaranth-regular-webfont.eot');
-	src: url('../font/amaranth/amaranth-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../font/amaranth/amaranth-regular-webfont.woff') format('woff'),
-		 url('../font/amaranth/amaranth-regular-webfont.ttf') format('truetype'),
-		 url('../font/amaranth/amaranth-regular-webfont.svg#amaranthregular') format('svg');
+	src: url('../fonts/amaranth/amaranth-regular-webfont.eot');
+	src: url('../fonts/amaranth/amaranth-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/amaranth/amaranth-regular-webfont.woff') format('woff'),
+		 url('../fonts/amaranth/amaranth-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/amaranth/amaranth-regular-webfont.svg#amaranthregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -35,6 +35,30 @@ p a:hover, p a:focus {
 	text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+	font-family: "amaranth", Arial, sans-serif;
+}
+
+h4, .h4 {
+    font-size: 22px;
+}
+
+abbr[title], abbr[data-original-title] {
+	text-decoration: none;
+}
+
+.glyphicon {
+    font-size: 15px;
+}
+
+.content {
+	background-color: white;
+	box-shadow: 0px 0px 50px 0px #c0c0c0;
+	padding-left: 25px;
+    padding-right: 25px;
+	border-radius: 0px 0px 15px 15px;
+}
+
 .navbar {
 	margin-bottom: 0px;
 }
@@ -48,6 +72,23 @@ p a:hover, p a:focus {
 	margin-bottom: 14px;
 }
 
+.navbar-brand {
+	font-family: "amaranth", Arial, sans-serif;
+}
+
+.navbar-nav > li > .dropdown-menu  {
+    background-color: #1a1a1a;
+}
+
+.navbar-nav .dropdown-menu > li > a {
+	color: #999;
+}
+
+.navbar-nav .dropdown-menu > li > a:hover, .navbar-nav .dropdown-menu > li > a:focus, .navbar-nav .dropdown-menu > .active > a, .navbar-nav .dropdown-menu > .active > a:hover, .navbar-nav .dropdown-menu > .active > a:focus {
+	background-color: #080808;
+	color: #fff;
+}
+
 .jumbotron {
 	background: url(../img/1000f.png) no-repeat center center fixed;
 	/*background-image: url("../img/1000f.png");
@@ -55,7 +96,7 @@ p a:hover, p a:focus {
 	background-size: cover;
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 150px;
+	padding-bottom: 100px;
 	margin-bottom: 0px;
 	border-bottom: 1px solid #101010;
 }
@@ -63,7 +104,7 @@ p a:hover, p a:focus {
 .jumbotron .container {
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: 0 0 1px rgba(0,0,0,.05),0 1px 2px rgba(0,0,0,.3);
-	color: rgba(255,255,255,0.9);
+	color: #fff;
 }
 
 .jumbotron p {
@@ -83,7 +124,6 @@ p a:hover, p a:focus {
 }
 
 .jumbotron h1 {
-	font-family: "amaranth", Arial, sans-serif;
 	color: #fff;
 	font-size: 50px;
 	margin-bottom: 0.67em;
@@ -99,11 +139,68 @@ p a:hover, p a:focus {
 	}
 }
 
-@media (max-width: 991px) {
-	#projets img {
+
+
+
+#JumboSeparator {
+    position: relative;
+	z-index: 1;
+	background-color: #222;
+	padding: 15px 0;
+}
+
+.social {
+	margin-top: 40px;
+}
+
+.social span{
+	display: none;
+}
+
+.social ul li {
+	display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.social a {
+    line-height: 1;
+    position: relative;
+    display: block;
+    margin: 3px 7px 3px 0;
+    padding: 9px;
+    text-align: center;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#projets img, #projetsabandon img {
 		height: 300px;
 		width: 300px;
 	}
+
+	#projets img.game {
+		width: 206px;
+		height: 165px;
+	}
+
+	.game.thumbnail {
+		margin-bottom: 10px;
+	}
+
+@media (max-width: 991px) {
 	.youtube {
 		height: 169px;
 		width: 300px;
@@ -159,7 +256,7 @@ p a:hover, p a:focus {
 }
 
 .achievement {
-	background-color: #f1f1f1;
+	background-color: #eaeaea;
 	color: #222;
 	padding: 5px;
 	/*margin: 5px 0 5px 0;*/
@@ -199,7 +296,7 @@ p a:hover, p a:focus {
 	height: 50px;
 	width: 50px;
 	border-radius: 25%;
-	background-color: #548DAD;
+	background-color: #428bca;
 	margin: 5px;
 	padding: 8px 0px 0px 1px;
 	color: #fff;
